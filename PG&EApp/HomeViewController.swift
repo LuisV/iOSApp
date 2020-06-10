@@ -19,13 +19,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        MaterialsView.layer.cornerRadius = 12;
+        MaterialsView.layer.cornerRadius = 8;
         MaterialsView.layer.masksToBounds = true;
-        ToolsView.layer.cornerRadius = 12;
+        ToolsView.layer.cornerRadius = 8;
         ToolsView.layer.masksToBounds = true;
-        MeterView.layer.cornerRadius = 12;
+        MeterView.layer.cornerRadius = 8;
         MeterView.layer.masksToBounds = true;
-        LastView.layer.cornerRadius = 12;
+        LastView.layer.cornerRadius = 8;
         LastView.layer.masksToBounds = true;
         let chicken = DB.database.getRequests()
     }

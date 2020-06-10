@@ -11,15 +11,43 @@ import MobileCoreServices
 var titleStr: String = "Upload"
 var btn = UIButton()
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var imgV: UIImageView!
+    @IBAction func onCameraButtonClick(_ sender: Any) {
+        openCamera()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @objc func openCamera(){
+        let imgPicker = UIImagePickerController()
+        imgPicker.delegate = self
+        imgPicker.sourceType = .camera
+        imgPicker.allowsEditing = false
+        imgPicker.showsCameraControls = true
+        self.present(imgPicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey :
+    Any]) {
+    if let img = info[UIImagePickerController.InfoKey.editedImage] as?
+    UIImage {
+    self.imgV.image = img
+    self.dismiss(animated: true, completion: nil)
+    } else {
+    print("error")
+    }
+    }
+    
+    
     func refreshTitle(_ sender: UIButton){
          sender.setTitle(titleStr, for:  .normal)
     }
+
     @IBAction func importFile(_ sender: UIButton) {
         print("uploading..")
         btn = sender
