@@ -13,10 +13,12 @@ import Eureka
 
 class MyFormViewController: FormViewController {
 
+   
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        form +++ Section()
-            <<< TextRow(){ row in
+        form
+            +++ TextRow(){ row in
                 row.title = "Material Code"
                 row.placeholder = "MXXXXX"
             }

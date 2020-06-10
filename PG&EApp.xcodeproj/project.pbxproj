@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E12AB1524902F9E00F0D7E0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E12AB1424902F9E00F0D7E0 /* File.swift */; };
 		7E6BFAFF24895664005C0083 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFAFE24895664005C0083 /* DB.swift */; };
 		7E99D884247EC871007BD4E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99D883247EC871007BD4E9 /* HomeViewController.swift */; };
+		7EA116AB248F0762006A0843 /* FlowBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA116AA248F0762006A0843 /* FlowBarController.swift */; };
+		7EB884B62491796500480EFD /* ReporterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB884B52491796500480EFD /* ReporterInfoController.swift */; };
 		7ED6E9FA24882A98001F0C1F /* FormViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6E9F924882A98001F0C1F /* FormViewControler.swift */; };
 		7EF009A6247DC6A100581F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF009A5247DC6A100581F7A /* AppDelegate.swift */; };
 		7EF009A8247DC6A100581F7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF009A7247DC6A100581F7A /* SceneDelegate.swift */; };
@@ -51,8 +54,11 @@
 		5736F33A3A1710F3D58D8A3B /* Pods_PG_EAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG_EAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9FD5CCCBC5ECD2B586E97 /* Pods-PG&EApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG&EApp.debug.xcconfig"; path = "Target Support Files/Pods-PG&EApp/Pods-PG&EApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7C0B4FF5CD5DE494E53D9E27 /* Pods-PG&EAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG&EAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PG&EAppTests/Pods-PG&EAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E12AB1424902F9E00F0D7E0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		7E6BFAFE24895664005C0083 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		7E99D883247EC871007BD4E9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7EA116AA248F0762006A0843 /* FlowBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowBarController.swift; sourceTree = "<group>"; };
+		7EB884B52491796500480EFD /* ReporterInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporterInfoController.swift; sourceTree = "<group>"; };
 		7ED6E9F924882A98001F0C1F /* FormViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControler.swift; sourceTree = "<group>"; };
 		7EF009A2247DC6A100581F7A /* PG&EApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PG&EApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF009A5247DC6A100581F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,11 +153,14 @@
 			children = (
 				7EF009A5247DC6A100581F7A /* AppDelegate.swift */,
 				7EF009A7247DC6A100581F7A /* SceneDelegate.swift */,
+				7E12AB1424902F9E00F0D7E0 /* File.swift */,
+				7EA116AA248F0762006A0843 /* FlowBarController.swift */,
 				7EF009D5247DED4000581F7A /* GradientView.swift */,
 				C358A9802484973600AA920B /* models */,
 				7EF009A9247DC6A100581F7A /* ViewController.swift */,
 				C358A98324849D5900AA920B /* controllers */,
 				7EF009AB247DC6A100581F7A /* Main.storyboard */,
+				7EB884B52491796500480EFD /* ReporterInfoController.swift */,
 				7ED6E9F924882A98001F0C1F /* FormViewControler.swift */,
 				7E99D883247EC871007BD4E9 /* HomeViewController.swift */,
 				7E6BFAFE24895664005C0083 /* DB.swift */,
@@ -457,11 +466,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E99D884247EC871007BD4E9 /* HomeViewController.swift in Sources */,
+				7E12AB1524902F9E00F0D7E0 /* File.swift in Sources */,
 				C358A98524849DBD00AA920B /* RequestTableViewCell.swift in Sources */,
+				7EB884B62491796500480EFD /* ReporterInfoController.swift in Sources */,
 				C358A982248497ED00AA920B /* Request.swift in Sources */,
 				7E6BFAFF24895664005C0083 /* DB.swift in Sources */,
 				7EF009AA247DC6A100581F7A /* ViewController.swift in Sources */,
 				7EF009A6247DC6A100581F7A /* AppDelegate.swift in Sources */,
+				7EA116AB248F0762006A0843 /* FlowBarController.swift in Sources */,
 				7EF009D6247DED4000581F7A /* GradientView.swift in Sources */,
 				C358A9872484A27700AA920B /* RequestTableViewController.swift in Sources */,
 				7EF009A8247DC6A100581F7A /* SceneDelegate.swift in Sources */,
